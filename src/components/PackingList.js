@@ -1,3 +1,14 @@
+import initialItems from '../data'
+import Item from './Item'
+
 export default function PackingList() {
-  return <div className="list">LIST</div>
+  return (
+    <div className="list">
+      <ul className="list">
+        {initialItems.map((item) => (
+          <Item item={item} />
+        ))}
+      </ul>
+    </div>
+  )
 }
