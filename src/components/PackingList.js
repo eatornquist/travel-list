@@ -6,7 +6,7 @@ export default function PackingList() {
     <div className="list">
       <ul className="list">
         {initialItems.map((item) => (
-          <Item item={item} />
+          <Item item={item} key={item.id} />
         ))}
       </ul>
     </div>
